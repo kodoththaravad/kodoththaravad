@@ -1,0 +1,2 @@
+db.createCollection(slNo, name, address, memberNo, joiningDate, totalAmount, locality)
+

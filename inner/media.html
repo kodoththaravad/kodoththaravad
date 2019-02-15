@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>History</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../stsn.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<script src="../action.js"></script>
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.stsn-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.stsn-half img:hover{opacity:1}
+
+
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+</style>
+<body>
+
+<!--side helper menu for listing--> <!--include bootstap for mobile viewing-->
+<nav class="stsn-sidebar stsn-red stsn-collapse stsn-top stsn-large stsn-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="spyderTechSolution_close()" class="stsn-button stsn-hide-large stsn-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="stsn-container">
+    <h3 class="stsn-padding-64"><b>Kodoth<br>Tharavad<br>History</b></h3>
+  </div>
+  <div class="stsn-bar-block"> 
+    <a href="../index.html" onclick="spyderTechSolution_close()" class="stsn-bar-item stsn-button stsn-hover-white">Home</a>   
+    <a href="#berikulamTharavad" onclick="spyderTechSolution_close()" class="stsn-bar-item stsn-button stsn-hover-white">Kodoth Tharavad</a> 
+    <a href="#kodothTemple" onclick="spyderTechSolution_close()" class="stsn-bar-item stsn-button stsn-hover-white">Kodoth Temple</a> 
+    <a href="#kodothBhagavathi" onclick="spyderTechSolution_close()" class="stsn-bar-item stsn-button stsn-hover-white">Kodoth Bhagavathi</a>
+    <a href="./programsHeld.html" onclick="spyderTechSolution_close()" class="stsn-bar-item stsn-button stsn-hover-white">Events</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="stsn-container stsn-top stsn-hide-large stsn-red stsn-xlarge stsn-padding">
+  <a href="javascript:void(0)" class="stsn-button stsn-red stsn-margin-right" onclick="spyderTechSolution_open()">☰</a>
+  <span>Kodoth Tharavad</span>
+</header>
+
+<!-- Overlay  -->
+<div class="stsn-overlay stsn-hide-large" onclick="spyderTechSolution_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="stsn-main" style="margin-left:340px;margin-right:40px">
+    <!--<h1 class="stsn-jumbo"><b>Kodoth History</b></h1>-->
+
+   <!-- start all information below here.......................................
+  ----------------------------------------------------------------------------->
+
+  <!-- Header -->    <!--Berikulam Tharavad Details-->
+
+    <div class="stsn-container" style="margin-top:80px" id="berikulamTharavad">
+
+    <h1 class="stsn-xxxlarge stsn-text-grey"><b>Berikulam Puthiyya Veedu</b></h1>
+    <hr style="width:50px;border:5px solid red" class="stsn-round">
+  </div>
+  
+  <div class="stsn-row-padding">
+    <div class="stsn-half">
+      <img src="../images/berikulamTharavad.jpg" style="width:100%" onclick="onClick(this)" alt="Berikulam Tharavad Sitout">
+      <img src="../images/berikulamTharavadAayudhaMuri.jpg" style="width:100%" onclick="onClick(this)" alt="Berikulam Tharavd Aayudha room">
+      <img src="../images/berikulamTharavadMain.jpg" style="width:100%" onclick="onClick(this)" alt="Berikulam Tharavd Front">
+    </div>
+
+    <div class="stsn-half">
+      <img src="../images/berikulamTharavadKalari.jpg" style="width:100%" onclick="onClick(this)" alt="berikulam Tharavad Kalari ">
+      <img src="../images/berikulamTharavadEntrance.jpg" style="width:100%" onclick="onClick(this)" alt="Berikulam Entrance">
+      <img src="../images/berikulamTharavadDoor.jpg" style="width:100%" onclick="onClick(this)" alt="Berikulam Entrance Door">
+    </div>
+  </div>
+
+  <!-- full open on click-->
+  <div id="modal01" class="stsn-modal stsn-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="stsn-button stsn-black stsn-xxlarge stsn-display-topright">×</span>
+    <div class="stsn-modal-content stsn-animate-zoom stsn-center stsn-transparent stsn-padding-64">
+      <img id="img01" class="stsn-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+  
+
+    <!-- Header -->       <!--Kodoth Temple Details-->
+    <div class="stsn-container" style="margin-top:80px" id="kodothTemple">
+        <h1 class="stsn-xxxlarge stsn-text-grey"><b>Kodoth Temple</b></h1>
+        <hr style="width:50px;border:5px solid red" class="stsn-round">
+      </div>
+      
+      <!-- Photo grid (modal) -->
+      <div class="stsn-row-padding">
+        <div class="stsn-half">
+          <img src="../images/kodothTemple.jpg" style="width:100%" onclick="onClick(this)" alt="Kodoth Temple">
+        </div>
+    
+        <div class="stsn-half">
+          <img src="" style="width:100%" onclick="onClick(this)" alt="Kodoth Temple">  
+        </div>
+      </div>
+    
+      <!-- Modal for full size images on click-->
+      <div id="modal01" class="stsn-modal stsn-black" style="padding-top:0" onclick="this.style.display='none'">
+        <span class="stsn-button stsn-black stsn-xxlarge stsn-display-topright">×</span>
+        <div class="stsn-modal-content stsn-animate-zoom stsn-center stsn-transparent stsn-padding-64">
+          <img id="img01" class="stsn-image">
+          <p id="caption"></p>
+        </div>
+      </div>
+    
+
+    
+    <!-- Header -->                 <!--Kodoth Bhagavathi datils-->
+    <div class="stsn-container" style="margin-top:80px" id="kodothBhagavathi">
+      <h1 class="stsn-xxxlarge stsn-text-grey"><b>Kodoth Bhagavathi</b></h1>
+      <hr style="width:50px;border:5px solid red" class="stsn-round">
+    </div>
+    
+    <!-- Photo grid (modal) -->
+    <div class="stsn-row-padding">
+      <div class="stsn-half">
+        <img src="" style="width:100%" onclick="onClick(this)" alt="Kodoth Bhagavathi">
+      </div>
+  
+      <div class="stsn-half">
+        <img src="../images/berikulamBhagavathi.jpg" style="width:100%" onclick="onClick(this)" alt="Kodoth Bhagavathi">  
+      </div>
+    </div>
+  
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="stsn-modal stsn-black" style="padding-top:0" onclick="this.style.display='none'">
+      <span class="stsn-button stsn-black stsn-xxlarge stsn-display-topright">×</span>
+      <div class="stsn-modal-content stsn-animate-zoom stsn-center stsn-transparent stsn-padding-64">
+        <img id="img01" class="stsn-image">
+        <p id="caption"></p>
+      </div>
+    </div>
+
+</div>   <!--end all content abov this line................................................-->
+<div class="stsn-light-grey stsn-container stsn-padding-32" style="margin-top:75px;padding-right:58px"><p class="stsn-right">Created at Alackuzhi House</p></div>
+</body>
+</html>
