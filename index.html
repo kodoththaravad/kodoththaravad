@@ -13,7 +13,6 @@ body {font-size:16px;}
 .stsn-half img:hover{opacity:1}
 </style>
 <body>
-
     <div class="stsn-top">
         <div class="stsn-bar stsn-white stsn-wide stsn-padding stsn-card">
           <div class="stsn-right stsn-hide-small">
@@ -21,33 +20,25 @@ body {font-size:16px;}
           </div>
         </div>
       </div>
-
-<!--side helper menu for listing--> <!--include bootstap for mobile viewing-->
+<!--for mobile viewing-->
 <nav class="stsn-sidebar stsn-red stsn-collapse stsn-top stsn-large stsn-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="spyderTechSolution_close()" class="stsn-button stsn-hide-large stsn-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
-
+  <a href="javascript:void(0)" onclick="stsn_close()" class="stsn-button stsn-hide-large stsn-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="stsn-bar-block"> 
-      <a href="./historyData/history.html" onclick="spyderTechSolution_close()" class="stsn-bar-item stsn-button stsn-hover-white">History</a>   
-    <a href="./kbdss.html" onclick="spyderTechSolution_close()" class="stsn-bar-item stsn-button stsn-hover-white">KBDSS</a> 
-    <a href="./inner/media.html" onclick="spyderTechSolution_close()" class="stsn-bar-item stsn-button stsn-hover-white">Media</a> 
-    <a href="./db/payment.html" onclick="spyderTechSolution_close()" class="stsn-bar-item stsn-button stsn-hover-white">Fee</a> 
-    <a href="#contact" onclick="spyderTechSolution_close()" class="stsn-bar-item stsn-button stsn-hover-white">Contact Us</a>
+    <a href="./historyData/history.html" onclick="stsn_close()" class="stsn-bar-item stsn-button stsn-hover-white">History</a>   
+    <a href="./kbdss.html" onclick="stsn_close()" class="stsn-bar-item stsn-button stsn-hover-white">KBDSS</a> 
+    <a href="./inner/media.html" onclick="stsn_close()" class="stsn-bar-item stsn-button stsn-hover-white">Media</a> 
+    <a href="./db/payment.html" onclick="stsn_close()" class="stsn-bar-item stsn-button stsn-hover-white">Fee</a> 
+    <a href="#contact" onclick="stsn_close()" class="stsn-bar-item stsn-button stsn-hover-white">Contact Us</a>
   </div>
 </nav>
-
 <header class="stsn-container stsn-top stsn-hide-large stsn-red stsn-xlarge stsn-padding">
-  <a href="javascript:void(0)" class="stsn-button stsn-red stsn-margin-right" onclick="spyderTechSolution_open()">☰</a>
+  <a href="javascript:void(0)" class="stsn-button stsn-red stsn-margin-right" onclick="stsn_open()">☰</a>
   <span>Kodoth Tharavad</span>
 </header>
-
-<div class="stsn-overlay stsn-hide-large" onclick="spyderTechSolution_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<div class="stsn-overlay stsn-hide-large" onclick="stsn_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 <div class="stsn-main" style="margin-left:340px;margin-right:40px">
 
-
-  <div class="stsn-container" style="margin-top:80px" id="top">
-
-
-  </div>
+  <div class="stsn-container" style="margin-top:80px" id="top"></div>
   
   <div class="stsn-row-padding">
     <div class="stsn-full">
